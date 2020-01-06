@@ -19,8 +19,13 @@ public class StartActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
+        init();
+
+    }
 
 
+    private void init()
+    {
         mBtnCreateProduct = findViewById(R.id.idBtnCreateProduct);
         mBtnShowProduct = findViewById(R.id.idBtnShowProduct);
 
@@ -41,5 +46,6 @@ public class StartActivity extends AppCompatActivity {
                 startActivity(new Intent(StartActivity.this, ProductListActivity.class));
             }
         });
+
     }
 }

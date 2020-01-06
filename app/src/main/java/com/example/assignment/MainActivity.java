@@ -30,7 +30,7 @@ Abhishek Kumar Yadava
 public class MainActivity extends AppCompatActivity {
 
     EditText mEdtName, mEdtDescription, mEdtRegularPrice, mEdtSalePice;
-    Button mBtnAdd, mBtnList;
+    Button mBtnAdd;
     ImageView mImageProductPhoto;
 
     final int REQUEST_CODE_GALLERY = 999;
@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("New Product");
 
@@ -50,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
         mEdtRegularPrice = findViewById(R.id.edtRegularPrice);
         mEdtSalePice = findViewById(R.id.edtSalePrice);
         mBtnAdd = findViewById(R.id.btnAdd);
-        mBtnList = findViewById(R.id.btnList);
         mImageProductPhoto = findViewById(R.id.imgProductPhoto);
 
         //creating database
@@ -107,14 +108,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //show record list
-        mBtnList.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //start recordlist activity
-                startActivity(new Intent(MainActivity.this, ProductListActivity.class));
-            }
-        });
+
 
 
     }

@@ -62,18 +62,10 @@
             android:layout_marginTop="20dp"
             android:text="Save"
             android:textColor="#ffffff"
-            android:background="#33FF33"
+            android:background="#117A65"
             android:layout_width="150dp"
             android:layout_height="wrap_content" />
-        <Button
-            android:id="@+id/btnList"
-            android:layout_below="@id/btnAdd"
-            android:layout_centerHorizontal="true"
-            android:minWidth="160dp"
-            android:text="Record List"
-            style="@style/Base.Widget.AppCompat.Button.Colored"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+
 
     </RelativeLayout>
 
